@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -10,6 +14,7 @@
 <body>
     <div class="login-container">
         <h2 style="text-align: center;">Please Enter Your Login Information</h2>
+        <br>
         <form  style="text-align: center;" method="post">
             <input type="text" name="username" placeholder="Username" required>
             <br>
@@ -17,6 +22,10 @@
             <br>
             <button type="submit">Login</button>
         </form>
+    </div>
+
+    <div class="back-button" style="text-align: center; margin-top: 20px;">
+        <a href="home.php">Back to Home</a>
     </div>
 </body>
 </html>
