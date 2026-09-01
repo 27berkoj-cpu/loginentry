@@ -27,7 +27,7 @@ input:hover{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background : url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-Qr_tzqcmiG5dlCleVdoPj_d76OWn1etTfxB_qqXoA&s=10') no-repeat center center fixed;
+    background : url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg') no-repeat center center fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -99,6 +99,10 @@ input:hover{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.login-container h2{
+    color: #3547b5;
+    font-weight: bold;
 }
 .home-container{
     width: 400px;

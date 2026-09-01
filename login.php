@@ -13,6 +13,8 @@
 </head>
 <body>
     <div class="login-container">
+        <img src="img/download.png" alt="Login Image" style="display: block; margin: 0 auto; width: 100px; height: 100px;">
+        <br>
         <h2 style="text-align: center;">Please Enter Your Login Information</h2>
         <form  style="text-align: center;" method="post">
             <p class="form-text" >Enter your username 👤</p>
