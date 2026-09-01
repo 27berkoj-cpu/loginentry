@@ -1,0 +1,22 @@
+title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+}
+body{
+    background-color: #b8b2b2;
+}
+button{
+    width: 100px;
+
+}
+
+button:hover{
+    background-color: #8b0000;
+    color: white;
+    height: 50px;
+    width: 250px;
+}
+input:hover{
+    border-color: #8b0000;
+    border-width: 5px;
+}
