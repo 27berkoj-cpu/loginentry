@@ -16,12 +16,12 @@
         <img src="img/download.png" alt="Login Image" style="display: block; margin: 0 auto; width: 100px; height: 100px;">
         <br>
         <h2 style="text-align: center;">Please Enter Your Login Information</h2>
-        <form  style="text-align: center;" method="post">
+        <form style="text-align: center;" method="post">
             <p class="form-text" >Enter your username 👤</p>
-            <input type="text" name="username" placeholder="Username" required>
+            <input class="login-input" type="text" name="username" placeholder="Username" required>
             <br>
             <p class="form-text" >Enter your password 🔒</p>
-            <input type="password" name="password" placeholder="Password" required>
+            <input class="login-input" type="password" name="password" placeholder="Password" required>
             <br>
             <button type="submit">Login</button>
         </form>

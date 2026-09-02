@@ -18,4 +18,4 @@
         <a href="login.php" style="text-align: center; display: block; margin-top: 20px;">Click here to log in</a>
     </div>
 </body>
-</html>
+</html> 
