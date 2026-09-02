@@ -121,3 +121,18 @@ input:hover{
     border-radius: 5px;
     background-color: #f1f1f1;
 }
+
+.login-success {
+   font-size:10px;
+   font-family: sans-serif;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+.login-error {
+   font-size:10px;
+   font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
