@@ -14,7 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $usernamelength = strlen($username);
     $passwordlength = strlen($password);
-    $containEmailSign = strpos($email, '@');
+    $isEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
+    $containEmailSign = strpos($email, '@') !== false;
+    
 
     $errors = [];
 
@@ -22,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = "Username is required and must be between 1 and 12 characters.";
     }
 
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) || $containEmailSign === false) { //check to see if the email is empty, is a valid email format, and contains an '@' symbol
+    if (empty($email) || !$isEmail || $containEmailSign === false) { //check to see if the email is empty, is a valid email format, and contains an '@' symbol
         $errors[] = "A valid email address is required.";
     }
 
