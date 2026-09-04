@@ -79,11 +79,23 @@
 
         ?>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" style="text-align: center;" method="post">
-            <p class="form-text" >Enter your email address 👤</p>
-            <input class="login-input" type="email" name="email" placeholder="Email" value="<?=$email?>" required>
+  
+            <p class="form-text" >
+            <label id = "login-label">Enter your email address 👤</label>
             <br>
+            <input
+            type="email"
+            class="login-input"
+            name="email"
+            patter= "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            value="<?= htmlspecialchars($email, ENT_QUOTES, 'UTF-8') ?>"
+            placeholder="Enter your email"
+            required>        
+            
+        
+        </p>
             <p class="form-text" >Enter your password 🔒</p>
-            <input class="login-input" type="password" name="password" placeholder="Password" value="<?=$password?>" required>
+            <input class="login-input" type="password" name="password" placeholder="Password" value="<?= htmlspecialchars($password, ENT_QUOTES, 'UTF-8') ?>" required>
             <br>
             <button type="submit">Login</button>
         </form>
