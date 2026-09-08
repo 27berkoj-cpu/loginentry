@@ -26,7 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($finalGrade === '' || $finalGrade === null) {
         $errors[] = "Final grade is required.";
-    } elseif (!is_numeric($finalGrade) || (float) $finalGrade < 0 || (float) $finalGrade > 100) {
+    }
+    elseif(filter_var($finalGrade, FILTER_VALIDATE_FLOAT) === false) {
+        $errors[] = "Final grade must be a valid number.";
+    }
+    elseif (!is_numeric($finalGrade) || (float) $finalGrade < 0 || (float) $finalGrade > 100) {
         $errors[] = "Final grade must be a number between 0 and 100.";
     }
 
@@ -72,9 +76,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="text" id="program-name" name="program-name" class="form-input" required placeholder="e.g., Computer Science">
             </div>
 
-            <div>
+            <!-- <div>
                 <label for="student-grade" class="form-label">Final Grade</label>
                 <input type="number" id="student-grade" name="student-grade" step="0.01" min="0" max="100" class="form-input" required placeholder="e.g., 95.5">
+            </div> -->
+
+
+            <div>
+                <label for="student-grade" class="form-label">Final Grade</label>
+                <input type="text" id="student-grade" name="student-grade" class="form-input" required placeholder="e.g., 95.5">
             </div>
 
             <button type="submit" class="form-button">Submit Information</button>
