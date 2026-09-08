@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $showSubmittedInfo = true;
     unset($_SESSION['submitted_student']);
 
-    header('Refresh: 5; url=student-login.php');
+    header('Refresh: 20; url=student-login.php');
 }
 ?>
 <!DOCTYPE html>
